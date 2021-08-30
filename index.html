@@ -18,17 +18,16 @@
 
 
 
-    <button type="button" onclick="Klikkaus()" >Klikkaa mua!</button>
     <h1> voihan kakka sentään </h1>
-    <img src="/sininen muna.png" alt="" id="munakuva">
-    <p>dasd</p>
+    <img onclick="Painanta()" src="/sininen muna.png" alt="" id="munakuva">
     <p>kakkapylly on <p id="numero"> 0 </p> kertaa tyhmempi kuin pyllykakka </p>
 
 
     <script>
         let klikkaukset = 0
-        function Klikkaus(){
-        klikkaukset++;
+        function Painanta(){
+        klikkaukset++
+            document.getElementById("numero").innerHTML = klikkaukset
             if(klikkaukset > 5){
                 document.getElementById("munakuva").src = "/sininen muna rikki.png"
                 alert("LOPETA")
