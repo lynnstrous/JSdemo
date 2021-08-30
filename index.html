@@ -1,30 +1,39 @@
-<p>kakka on sängyssä </p>
-<p>sängyssä on kakka </p>
-<p>aurinko paistaa </p>
-<p>ja niin paistaa peppukin </p>
+<!DOCTYPE html>
 
-<h1>voihan kakka sentään </h1>
+<head>
+    <title>Kakkailu</title>
+</head>
 
-<p>peppu on sängyllä </p>
-<p>sängyssä on peppu </p>
-<p>niin on kakkakin </p>
+<body>
+    <p>kakka on sängyssä </p>
+    <p>sängyssä on kakka </p>
+    <p>aurinko paistaa </p>
+    <p>ja niin paistaa peppukin </p>
+
+    <h1>voihan kakka sentään </h1>
+
+    <p>peppu on sängyllä </p>
+    <p>sängyssä on peppu </p>
+    <p>niin on kakkakin </p>
 
 
 
-<button type="button" onclick="Klikkaus()" >Klikkaa mua!</button>
-<h1> voihan kakka sentään </h1>
-<img src="/sininen muna.png" alt="">
+    <button type="button" onclick="Klikkaus()" >Klikkaa mua!</button>
+    <h1> voihan kakka sentään </h1>
+    <img src="/sininen muna.png" alt="" id="munakuva">
+    <p>dasd</p>
+    <p>kakkapylly on <p id="numero"> 0 </p> kertaa tyhmempi kuin pyllykakka </p>
 
-<p>kakkapylly on <p id="numero"> 0 </p> kertaa tyhmempi kuin pyllykakka </p>
 
-
-<script>
-    let klikkaukset = 0
-    function Klikkaus(){
-    klikkaukset++;
-        if(klikkaukset > 5){
-            alert("LOPETA")
+    <script>
+        let klikkaukset = 0
+        function Klikkaus(){
+        klikkaukset++;
+            if(klikkaukset > 5){
+                document.getElementById("munakuva").src = "/sininen muna rikki.png"
+                alert("LOPETA")
+            }
         }
-    }
 
-</script>
+    </script>
+</body>
